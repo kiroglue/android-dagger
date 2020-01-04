@@ -1,4 +1,13 @@
-# Using Dagger in your Android app
+
+#Disclaimer
+* This codelab originally is published here: https://codelabs.developers.google.com/codelabs/android-dagger/#0
+* The purpose of forked by me and upload github is to reach/archive easily and keep statistics of previous codelabs that I worked.
+* There are some notes in project which starts with "kiroglu" prefix. Those are notes for me mostly based on codelab documentation.
+
+
+--------------
+#Original README
+## Using Dagger in your Android app
 
 This folder contains the source code for the "Using Dagger in your Android app" codelab.
 
@@ -9,7 +18,7 @@ steps towards the solution.
 * `solution` contains the solution to this codelab.
 
 
-# Introduction
+## Introduction
 Dependency injection is a technique widely used in programming and well suited
 to Android development. By following the principles of dependency injection, you
 lay the groundwork for a good app architecture.
@@ -20,19 +29,19 @@ Implementing dependency injection provides you with the following advantages:
 * Ease of testing.
 
 
-# Pre-requisites
+## Pre-requisites
 * Experience with Kotlin syntax.
 * You understand Dependency Injection and know what the benefits
 of using Dagger in your Android app are.
 
-# Getting Started
+## Getting Started
 1. Install Android Studio, if you don't already have it.
 2. Download the sample.
 3. Import the sample into Android Studio.
 4. Build and run the sample.
 
 
-# Comparison between different branches
+## Comparison between different branches
 * Step 1 - `master` to `1_registration_main` ([Comparison](https://github.com/googlecodelabs/android-dagger/compare/master...1_registration_main))
 * Step 2 - `1_registration_main` to `2_subcomponents` ([Comparison](https://github.com/googlecodelabs/android-dagger/compare/1_registration_main...2_subcomponents))
 * Step 3 - `2_subcomponents` to `3_dagger_app` ([Comparison](https://github.com/googlecodelabs/android-dagger/compare/2_subcomponents...3_dagger_app))
@@ -40,7 +49,7 @@ of using Dagger in your Android app are.
 * [Full codelab comparison](https://github.com/googlecodelabs/android-dagger/compare/master...solution)
 
 
-# License
+## License
 
 ```
 Copyright 2019 Google LLC
