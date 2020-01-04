@@ -1,12 +1,12 @@
 
-#Disclaimer
+# Disclaimer
 * This codelab originally is published here: https://codelabs.developers.google.com/codelabs/android-dagger/#0
 * The purpose of forked by me and upload github is to reach/archive easily and keep statistics of previous codelabs that I worked.
 * There are some notes in project which starts with "kiroglu" prefix. Those are notes for me mostly based on codelab documentation.
 
 
 --------------
-#Original README
+# Original README
 ## Using Dagger in your Android app
 
 This folder contains the source code for the "Using Dagger in your Android app" codelab.
