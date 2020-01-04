@@ -24,7 +24,7 @@ import com.example.android.dagger.user.UserManager
 
 open class MyApplication : Application() {
 
-    //kiroglue5
+    //kiroglue-5
     val appComponent: AppComponent by lazy {
         // Creates an instance of AppComponent using its Factory constructor
         // We pass the applicationContext that will be used as Context in the graph

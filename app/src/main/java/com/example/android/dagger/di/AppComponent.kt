@@ -1,12 +1,15 @@
 package com.example.android.dagger.di
 
 import android.content.Context
+import com.example.android.dagger.login.LoginActivity
+import com.example.android.dagger.main.MainActivity
 import com.example.android.dagger.registration.RegistrationActivity
 import dagger.BindsInstance
 import dagger.Component
+import javax.inject.Singleton
 
-
-@Component(modules = [StorageModule::class])//kiroglue5: After definition of StorageModule the error will be cleared
+@Singleton //kiroglue-7/1: It makes AppComponent singleton so any class can be singleton on AppComponetDaggerGraph
+@Component(modules = [StorageModule::class])//kiroglue-5: After definition of StorageModule the error will be cleared
 interface AppComponent{
 
 
@@ -18,12 +21,13 @@ interface AppComponent{
 
     // Classes that can be injected by this Component
     fun inject(activity:RegistrationActivity)
-
+    fun inject(activity:MainActivity)
+    fun inject(activity:LoginActivity)
 }
 
 
 /*
-    kiroglue3: Error convention:
+    kiroglue-3: Error convention:
     dagger/app/build/tmp/kapt3/stubs/debug/com/example/android/dagger/di/AppComponent.java:7: error: [Dagger/MissingBinding] com.example.android.dagger.storage.Storage cannot be provided without an @Provides-annotated method
 
     break it down:

@@ -24,7 +24,7 @@ import javax.inject.Inject
  * and fragments) uses to keep user's input data.
  */
 
-//kiroglue1: Constructor injection is one of injection types.
+//kiroglue-1: Constructor injection is one of injection types.
 //Others are: field and method. Now this class can be injected.
 class RegistrationViewModel @Inject constructor(val userManager: UserManager) {
 

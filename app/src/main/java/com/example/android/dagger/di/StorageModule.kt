@@ -6,7 +6,7 @@ import dagger.Binds
 import dagger.Module
 
 
-//kiroglue4:The way we tell Dagger how to provide Storage is different because Storage is an interface. We need to tell Dagger what implementation of Storage we want to use: SharedPreferencesStorage.
+//kiroglue-4:The way we tell Dagger how to provide Storage is different because Storage is an interface. We need to tell Dagger what implementation of Storage we want to use: SharedPreferencesStorage.
 //Another way to tell Dagger how to provide instances of a type is with information in Dagger Modules.
 //Use @Binds to tell Dagger which implementation it needs to use when providing an interface.
 @Module

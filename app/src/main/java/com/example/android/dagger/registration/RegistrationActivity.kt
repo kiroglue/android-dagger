@@ -28,13 +28,13 @@ import javax.inject.Inject
 
 class RegistrationActivity : AppCompatActivity() {
 
-    //kiroglue2: Here we say this object will be injected by Dagger
+    //kiroglue-2: Here we say this object will be injected by Dagger
     @Inject
     lateinit var registrationViewModel: RegistrationViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
-        //kiroglue:6 Calling appComponent.inject(this) populates the fields that RegistrationActivity has annotated with @Inject (i.e. registrationViewModel).
+        //kiroglue-6: Calling appComponent.inject(this) populates the fields that RegistrationActivity has annotated with @Inject (i.e. registrationViewModel).
         //It should be called before super to avoid initializition of fragments problems
         (application as MyApplication).appComponent.inject(this)
 
