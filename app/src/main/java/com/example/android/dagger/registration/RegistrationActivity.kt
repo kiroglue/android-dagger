@@ -28,6 +28,9 @@ import javax.inject.Inject
 
 class RegistrationActivity : AppCompatActivity() {
 
+    // Stores an instance of RegistrationComponent so that its Fragments can access it
+    lateinit var registrationComponent:RegistrationComponent
+
     //kiroglue-2: Here we say this object will be injected by Dagger
     @Inject
     lateinit var registrationViewModel: RegistrationViewModel
@@ -36,7 +39,10 @@ class RegistrationActivity : AppCompatActivity() {
 
         //kiroglue-6: Calling appComponent.inject(this) populates the fields that RegistrationActivity has annotated with @Inject (i.e. registrationViewModel).
         //It should be called before super to avoid initializition of fragments problems
-        (application as MyApplication).appComponent.inject(this)
+        //(application as MyApplication).appComponent.inject(this)
+        // Creates an instance of Registration component by grabbing the factory from the app graph
+        registrationComponent = (application as MyApplication).appComponent.registrationComponent().create()
+        registrationComponent.inject(this)
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registration)

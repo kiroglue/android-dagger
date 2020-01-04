@@ -16,6 +16,7 @@
 
 package com.example.android.dagger.registration
 
+import com.example.android.dagger.di.ActivityScope
 import com.example.android.dagger.user.UserManager
 import javax.inject.Inject
 
@@ -26,6 +27,8 @@ import javax.inject.Inject
 
 //kiroglue-1: Constructor injection is one of injection types.
 //Others are: field and method. Now this class can be injected.
+// Scopes ViewModel to components that use @ActivityScope
+@ActivityScope
 class RegistrationViewModel @Inject constructor(val userManager: UserManager) {
 
     private var username: String? = null
